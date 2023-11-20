@@ -1,0 +1,16 @@
+Insight: 
+
+Diffusion with correlated motions leads to anomalous diffusion
+Diffusion with correlated motions can be described by the non-additive aspects of Tsallis entropy
+
+It's possible to sample from a Tsallis entropy-maximizing distribution by first sampling a temperature with a certain distribution, and then sampling from the Shannon-entropy maximizing distribution at that temp. 
+
+In continuous-time RL, action selection becomes like Brownian motion or diffusion. The tiny Gaussian distributions with slightly different means can add up to non-Gaussian distributions
+Each Markov policy induces dynamical system
+	Here, Markov meaning that policy only cares about the current state: 
+		Important node, but this means it also does not care about the *policy* at other states
+Because each policy is markov, and state transition is markov, obeys normal diffusion laws. 
+*However*
+	We don't want the system to obey normal diffusion. 
+	Efficient exploration = superdiffusion
+Therefore markov policies are categorically incapable of efficient exploration 
